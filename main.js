@@ -8,7 +8,7 @@ tablaUsuarios = $('#tablaUsuarios').DataTable({
         "sAjaxSource": "serverside/serversideUsuarios.php",	
         "columnDefs": [ {
             "targets": -1,        
-            "defaultContent": "<div class='wrapper text-center'><div class='btn-group'><button class='btn btn-info btn-sm btnEditar' data-toggle='tooltip' title='Editar'><i class='material-icons'>edit</i></button><button class='btn btn-danger btn-sm btnBorrar' data-toggle='tooltip' title='Eliminar'><span class='material-icons'>delete</span></button></div></div>"
+            "defaultContent": "<div class='wrapper text-center'><div class='btn-group'><button class='btn btn-info btn-sm btnEditar' data-toggle='tooltip' title='Editar' style='background-color: #107035;'><i class='material-icons'>edit</i></button><button class='btn btn-danger btn-sm btnBorrar' data-toggle='tooltip' title='Eliminar'><span class='material-icons'>delete</span></button></div></div>"
         } ],	    
 });     
 
@@ -33,12 +33,11 @@ $('#formUsuarios').submit(function(e){
     $('#modalCRUD').modal('hide');											     			
 });
         
-//para limpiar los campos antes de crear una Persona
 $("#btnNuevo").click(function(){
     opcion = 1;           
     user_id=null;
     $("#formUsuarios").trigger("reset");
-    $(".modal-header").css( "background-color", "#17a2b8");
+    $(".modal-header").css( "background-color", "#107035");
     $(".modal-header").css( "color", "white" );
     $(".modal-title").text("Crear de Usuario");
     $('#modalCRUD').modal('show');	    
