@@ -16,7 +16,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">            
-            <button id="btnNuevo" type="button" class="btn btn-info" data-toggle="modal"><i class="material-icons">library_add</i></button>    
+            <button id="btnNuevo" type="button" class="btn btn-info" data-toggle="modal" style='background-color: #107035;' ><i class="material-icons" >library_add</i></button>    
             </div>    
         </div>    
     </div>    
